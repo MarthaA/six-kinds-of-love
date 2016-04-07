@@ -429,7 +429,7 @@ Sidebar
   /* icon before item name */
   position: absolute;
   content: '';
-  left: 5%;
+  left: 0%;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -439,7 +439,7 @@ Sidebar
   transform: translateY(-50%);
   height: 16px;
   width: 16px;
-  background: url(../img/cd-nav-icons.svg) no-repeat 0 0;
+
 }
 .cd-side-nav > ul > li.overview > a::before {
   background-position: -64px 0;
@@ -540,7 +540,7 @@ Sidebar
   .cd-side-nav .active > a {
     /* current page */
     box-shadow: inset 3px 0 0 #1784c7;
-    background-color: #33383e;
+    font-weight: bold;
   }
   .cd-side-nav .action-btn a {
     margin: 1em 10% 0;
