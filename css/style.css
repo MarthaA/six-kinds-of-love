@@ -3,6 +3,10 @@
 Primary style
 
 -------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -13,7 +17,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #fff;
   background-color: #ee0d5b;
 }
@@ -29,7 +33,7 @@ a {
 }
 
 input {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source+Code+Pro:500", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -297,6 +301,7 @@ Header
 Top Navigation
 
 -------------------------------- */
+
 .cd-nav {
   /* top nav - not visible on mobile devices */
   display: none;
@@ -340,6 +345,7 @@ Top Navigation
     display: block;
     font-size: 1.4rem;
     color: #ffffff;
+
   }
   .cd-top-nav > li {
     display: inline-block;
@@ -367,6 +373,9 @@ Top Navigation
 Sidebar
 
 -------------------------------- */
+.cd-side-nav{
+  font-family: 'Source+Code+Pro:500';
+}
 .cd-side-nav {
   position: absolute;
   z-index: 1;
@@ -384,6 +393,7 @@ Sidebar
   -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
   -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
+
 }
 .cd-side-nav.nav-is-visible {
   opacity: 1;
@@ -417,6 +427,7 @@ Sidebar
   position: relative;
   color: #000;
   font-size: 1.4rem;
+  font-family: 'Source Code Pro';
 }
 .cd-side-nav ul.cd-top-nav > li:last-of-type > a {
   border-bottom: none;
@@ -439,7 +450,7 @@ Sidebar
   transform: translateY(-50%);
   height: 16px;
   width: 16px;
-
+  font-family: 'Source+Code+Pro:500';
 }
 
 .cd-side-nav .count {
