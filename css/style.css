@@ -480,7 +480,7 @@ Sidebar
     position: relative;
     float: left;
     top: auto;
-    width: 110px;
+    width: 200px;
     min-height: 100vh;
     padding-top: 55px;
     /* reset style */
@@ -548,7 +548,7 @@ Sidebar
     color: transparent;
   }
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 768px) {
   .cd-side-nav {
     width: 200px;
   }
