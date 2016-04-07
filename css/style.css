@@ -422,7 +422,7 @@ Sidebar
   border-bottom: none;
 }
 .cd-side-nav > ul > li > a {
-  padding-left: calc(5% + 24px);
+  padding-left: 0em;
   border-bottom: 1px solid #373d44;
 }
 .cd-side-nav > ul > li > a::before {
@@ -441,24 +441,7 @@ Sidebar
   width: 16px;
 
 }
-.cd-side-nav > ul > li.overview > a::before {
-  background-position: -64px 0;
-}
-.cd-side-nav > ul > li.notifications > a::before {
-  background-position: -80px 0;
-}
-.cd-side-nav > ul > li.comments > a::before {
-  background-position: -48px 0;
-}
-.cd-side-nav > ul > li.bookmarks > a::before {
-  background-position: -32px 0;
-}
-.cd-side-nav > ul > li.images > a::before {
-  background-position: 0 0;
-}
-.cd-side-nav > ul > li.users > a::before {
-  background-position: -16px 0;
-}
+
 .cd-side-nav .count {
   /* notification badge */
   position: absolute;
@@ -522,7 +505,8 @@ Sidebar
   }
   .cd-side-nav a {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: left;
+    padding-left: 2em;
   }
   .cd-side-nav > ul > li > a {
     padding: calc(2.2em + 24px) 0 2.4em;
@@ -541,6 +525,8 @@ Sidebar
     /* current page */
     box-shadow: inset 3px 0 0 #1784c7;
     font-weight: bold;
+    text-align: left;
+    padding-left: 2em;
   }
   .cd-side-nav .action-btn a {
     margin: 1em 10% 0;
