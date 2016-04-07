@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
+
 @import 'bourbon'; // http://bourbon.io/
 
 @import '../partials/variables'; // colors, fonts etc...
@@ -23,7 +27,7 @@ html {
 body {
 	font: {
 		size: 1.6rem;
-		family: $primary-font; // variables inside partials > _variables.scss
+		family: 'Source+Code+Pro:500'; // variables inside partials > _variables.scss
 	}
 	color: $color-1;
 	background-color: $color-3;
@@ -36,7 +40,7 @@ a {
 }
 
 input {
-	font-family: $primary-font;
+	font-family: 'oswald';
 	font-size: 1.6rem;
 }
 
@@ -62,7 +66,8 @@ Main Page Content
 			text-align: center;
 			padding: 3em 0;
 			font-size: 2rem;
-			font-family: oswald;
+			font-family: 'Source+Code+Pro:500';
+			font-weight:
 		}
 	}
 
