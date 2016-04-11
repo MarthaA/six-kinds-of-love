@@ -1,10 +1,13 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+	<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Flickity Gallery -->
+	<link rel="stylesheet" href="css/flickity.css" media="screen">
+<script src="js/flickity.pkgd.js"></script>
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 
@@ -55,16 +58,39 @@
 		</nav>
 
 		<div class="content-wrapper">
-			<img class="main" src="img/image1.jpg">
-		</div> <!-- .content-wrapper -->
+
+<!-- .content-wrapper -->
+
+
+<!-- Flickity HTML init -->
+
+  <div class="hero-carousel js-flickity" data-js-module="hero-carousel"  data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+    <div class="hero-carousel__cell hero-carousel__cell--2">
+      <div class="hero-carousel__cell__content">
+				<img src="img/image1.jpg" alt="wolf">
+      </div>
+    </div>
+    <div class="hero-carousel__cell hero-carousel__cell--3">
+      <div class="hero-carousel__cell__content">
+				<img src="img/image2.jpg" alt="wolf">
+      </div>
+		</div>
+			<div class="hero-carousel__cell hero-carousel__cell--4">
+				<div class="hero-carousel__cell__content">
+					<img src="img/image3.jpg" alt="wolf">
+				</div>
+    </div>
+
+    </div>
+  </div>
+</div>
 
 	</main> <!-- .cd-main-content -->
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/jquery.menu-aim.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 
-
-<!--Gallery goes here-->
+</div> <!--Gallery goes here-->
 
 </body>
 </html>

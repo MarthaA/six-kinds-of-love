@@ -16,7 +16,7 @@ body {
   font-size: 1.6em;
   font-family: "Source Code Pro", sans-serif;
   color: #fff;
-  background-color: #ee0d5b;
+  background-color: #fff;
   height: 100%;
 }
 body::after {
@@ -84,7 +84,8 @@ Main Page Content
 
 -------------------------------- */
 .cd-main-content .content-wrapper {
-  padding: 45px 5% 3em;
+  padding: 0;
+  padding-top: 40px;
 }
 .cd-main-content .content-wrapper h1 {
   text-align: center;
@@ -98,13 +99,8 @@ Main Page Content
 }
 @media only screen and (min-width: 768px) {
   .cd-main-content .content-wrapper {
-    margin-left: 110px;
-    padding-top: 55px;
-  }
-  .cd-main-content .content-wrapper h1 {
-    padding: 4em 0;
-    font-size: 3.2rem;
-    font-weight: 300;
+    margin-left: 200px;
+    padding-top: 0px;
   }
   .cd-main-content::before {
     content: 'tablet';
@@ -558,7 +554,7 @@ Sidebar/Navigation
     padding-right: 40px!important;
   }
   .no-touch .cd-side-nav .action-btn a:hover {
-    background-color: #ee0d5b;
+    background-color: #ee0d5b!important;
   }
   .cd-side-nav .count {
     /* reset style */
