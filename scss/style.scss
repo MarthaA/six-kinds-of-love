@@ -25,6 +25,7 @@ html {
 }
 
 body {
+<<<<<<< HEAD
 	font: {
 		size: 1.6rem;
 		family: 'Source+Code+Pro:500'; // variables inside partials > _variables.scss
@@ -32,6 +33,13 @@ body {
 	color: $color-1;
 	background-color: $color-3;
 	@include clearfix;
+=======
+		font-family: oswald, sans-serif;
+		font-size: 1.6rem;
+		font-color: black;
+		background-color: white;
+		@include clearfix;
+>>>>>>> master
 }
 
 a {
