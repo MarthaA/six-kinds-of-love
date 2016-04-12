@@ -71,6 +71,7 @@ p {
   font-weight: 300;
   font-size: .75em;
   line-height: 1.5em;
+      max-width: 800px;
 }
 
 .group {
