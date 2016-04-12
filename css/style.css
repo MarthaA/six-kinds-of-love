@@ -38,8 +38,7 @@ h1.logo{
 div.label {
   position: absolute;
   top: 0;
-  background-color: white;
-  color: black;
+  color: white;
   font-family: "Source Code Pro", sans-serif;
   padding: 4px;
   z-index: 1;
@@ -74,6 +73,7 @@ p {
       max-width: 800px;
 }
 
+
 .group {
     float: left;
     margin-left: .5em;
@@ -81,16 +81,6 @@ p {
     margin-top: .25em;
     margin-bottom: .25em;
 }
-
-.group:hover .tint {
-  background:rgba(238,13,91,.75);
-                 text-align:center;
-                 opacity:.60;
-                 -webkit-transition: opacity .25s ease;
-                 -moz-transition: opacity .25s ease;}
-
-.tint {  opacity:1;
-               padding-bottom: -25px;}
 img.category {
   width: 100%;
 }
@@ -542,7 +532,8 @@ Sidebar/Navigation
 
 .cd-side-nav .action-btn a {
   display: block;
-  margin: 0 5%;
+  margin: 0 5% ;
+  padding-bottom: 10px;
   padding: 1em 0;
   background-color: #000;
   border: none;
