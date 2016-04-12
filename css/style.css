@@ -61,7 +61,23 @@ div.labelabout {
   margin-left: 3em;
   margin-top: 2em;
 }
+ul.questions {
+  color: black;
+  position: relative;
+  margin-left: 3.7em;
+  margin-top: 1em;
+  font-weight: 300;
+  width: 100%;
+  font-size: .65em;
+  line-height: 1.5em;
+  font-family: "Open Sans", serif;
+}
 
+li.title {
+  text-transform: capitalize;
+  font-weight: bold;
+  padding-top: 30px;
+}
 p {
   color: black;
   position: relative;
@@ -154,6 +170,10 @@ figcaption.subcaption {
     font-size: 1.25em;
     line-height: 1.5em;
   }
+  ul.questions {
+    margin-left: 1.25em;
+  }
+
 }
 
 h1.logo-mobile{
@@ -198,7 +218,24 @@ img.main {
 .form {
   float: left;
   margin-top: 50px;
-  margin-left: -15px;
+  width: 50%
+  margin-left: 110px;
+}
+
+.questions {
+  float: left;
+  width: 50%;
+  margin-right: 100px;
+}
+@media only screen and (max-width: 1200px) {
+
+  .form {
+    width: 100%
+  }
+
+  .questions {
+    width: 80%;
+  }
 
 }
 /* --------------------------------
