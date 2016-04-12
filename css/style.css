@@ -3,7 +3,7 @@
 Primary style
 
 -------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,700,400);
 
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 
@@ -11,15 +11,13 @@ Primary style
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   font-family: "Source Code Pro", sans-serif;
   color: #fff;
-  background-color: #ee0d5b;
+  background-color: #fff;
+  height: 100%;
 }
 body::after {
   clear: both;
@@ -27,22 +25,149 @@ body::after {
   display: table;
 }
 
+h1.logo{
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  font-size: 1.25em;
+  padding-left: 1em;
+  display: block;
+}
+
+div.label {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-family: "Source Code Pro", sans-serif;
+  padding: 4px;
+  z-index: 1;
+  font-size: .75em;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+div.labelabout {
+  position: absolute;
+  top: 0;
+  background-color: #ee0d5b;
+  color: white;
+  font-family: "Source Code Pro", sans-serif;
+  padding: 4px;
+  z-index: 1;
+  font-size: .75em;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+p {
+  color: black;
+  position: relative;
+  margin-left: 3em;
+  padding-top: 5em;
+  padding-right: 4em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: .75em;
+  line-height: 1.5em;
+      max-width: 800px;
+}
+
+
+.group {
+    float: left;
+    margin-left: .5em;
+    margin-right: 2em;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+img.category {
+  width: 100%;
+}
+
+.columns {
+    margin-left: 1.75em;
+    margin-top: 1em;
+    max-width: 800px;
+}
+figure {
+  width: 200px;
+}
+
+figcaption {
+  color: black;
+  text-align: center;
+  font-size: .75em;
+    margin-top: .5em;
+}
+
+figcaption.subcaption {
+  color: black;
+  font-size: .6em;
+  margin-top: .5em;
+  text-align: center;
+  padding-bottom: 1em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+@media screen and (max-width: 770px) {
+  h1.logo{
+    display: none;
+  }
+  div.label {
+    font-size: .6em;
+    margin-left: 1.5em;
+    margin-top: 5em;
+  }
+
+  div.labelabout {
+    font-size: .6em;
+    margin-left: 1.5em;
+    margin-top: 5em;
+  }
+  p {
+    margin-left: 1.25em;
+    padding-top: 4em;
+
+  }
+}
+
+h1.logo-mobile{
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  font-size: 1em;
+  padding-left: 1em;
+  padding-top: 4px;
+}
+
+h1{
+  font-size: 1.6em;
+  font-family: "Source Code Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 a {
-  color: #1784c7;
+  color: #ee0d5b;
   text-decoration: none;
 }
 
-input {
-  font-family: "Source+Code+Pro:500", sans-serif;
-  font-size: 1.6rem;
+a.logo {
+  color: #000;
+  z-index: 3;
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: visible;
+a.logo:hover {
+  color: #ee0d5b;
 }
+
+img.main {
+  padding-top: 2em;
+  width: 100%;
+}
+
 
 /* --------------------------------
 
@@ -50,12 +175,13 @@ Main Page Content
 
 -------------------------------- */
 .cd-main-content .content-wrapper {
-  padding: 45px 5% 3em;
+  padding: 0;
+  padding-top: 40px;
 }
 .cd-main-content .content-wrapper h1 {
   text-align: center;
   padding: 3em 0;
-  font-size: 2rem;
+  font-size: 2em;
 }
 .cd-main-content::before {
   /* never visible - used to check MQ in jQuery */
@@ -64,16 +190,16 @@ Main Page Content
 }
 @media only screen and (min-width: 768px) {
   .cd-main-content .content-wrapper {
-    margin-left: 110px;
-    padding-top: 55px;
-  }
-  .cd-main-content .content-wrapper h1 {
-    padding: 4em 0;
-    font-size: 3.2rem;
-    font-weight: 300;
+    margin-left: 200px;
+    padding-top: 0px;
   }
   .cd-main-content::before {
     content: 'tablet';
+  }
+  img.main {
+    padding-top: 2em;
+    width: 72%;
+    margin-left: 4em;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -82,6 +208,11 @@ Main Page Content
   }
   .cd-main-content::before {
     content: 'desktop';
+  }
+  img.main {
+    padding-top: 1em;
+    width: 100%;
+    margin-left: 0em;
   }
 }
 
@@ -92,13 +223,16 @@ Header
 -------------------------------- */
 .cd-main-header {
   position: absolute;
-  z-index: 2;
+  display: block;
+  z-index: 3;
   top: 0;
   left: 0;
   height: 45px;
   width: 100%;
-  background: #3e454c;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-bottom: 1px;
+  border-color: #e2e2e2;
+  border-style: solid;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -109,9 +243,11 @@ Header
 }
 @media only screen and (min-width: 768px) {
   .cd-main-header {
+    display: none;
     position: fixed;
     height: 55px;
   }
+
 }
 
 .cd-logo {
@@ -131,11 +267,15 @@ Header
 .cd-nav-trigger {
   /* navigation trigger - visible on mobile devices only */
   float: right;
-  position: relative;
+  position: absolute;
   display: block;
   width: 34px;
   height: 44px;
+
   margin-right: 5%;
+  top: 0;
+  right: 0;
+  z-index: 3;
   /* hide text */
   overflow: hidden;
   white-space: nowrap;
@@ -144,10 +284,11 @@ Header
 .cd-nav-trigger span, .cd-nav-trigger span::before, .cd-nav-trigger span::after {
   /* hamburger icon in CSS */
   position: absolute;
-  display: inline-block;
+  top: 0;
   height: 3px;
   width: 24px;
-  background: #ffffff;
+  background: #000;
+  z-index: 3;
 }
 .cd-nav-trigger span {
   /* line in the center */
@@ -191,10 +332,11 @@ Header
 .cd-nav-trigger.nav-is-visible span {
   /* hide line in the center */
   background: rgba(255, 255, 255, 0);
+
 }
 .cd-nav-trigger.nav-is-visible span::before, .cd-nav-trigger.nav-is-visible span::after {
   /* keep visible other 2 lines */
-  background: white;
+  background: black;
 }
 .cd-nav-trigger.nav-is-visible span::before {
   -webkit-transform: translateX(4px) translateY(-3px) rotate(45deg);
@@ -296,89 +438,20 @@ Header
   }
 }
 
-/* --------------------------------
 
-Top Navigation
-
--------------------------------- */
-
-.cd-nav {
-  /* top nav - not visible on mobile devices */
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .cd-nav {
-    display: block;
-    float: right;
-    height: 100%;
-  }
-}
-
-.cd-top-nav > li > a::before {
-  /* reset style */
-  display: none;
-}
-.cd-top-nav > li a {
-  padding: 1em 5% !important;
-}
-.cd-top-nav img {
-  /* avatar image */
-  position: absolute;
-  left: 1.8em;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .cd-top-nav {
-    height: 100%;
-  }
-  .cd-top-nav a {
-    display: block;
-    font-size: 1.4rem;
-    color: #ffffff;
-
-  }
-  .cd-top-nav > li {
-    display: inline-block;
-    margin-right: 1em;
-    height: 100%;
-  }
-  .cd-top-nav > li:last-of-type {
-    margin-right: 0;
-  }
-  .cd-top-nav > li a {
-    padding: 1em .6em !important;
-  }
-  .cd-top-nav img {
-    display: block;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-top-nav li:not(.has-children) a:hover {
-    color: #1784c7;
-  }
-}
 
 /* --------------------------------
 
-Sidebar
+Sidebar/Navigation
 
 -------------------------------- */
 .cd-side-nav{
   font-family: 'Source+Code+Pro:500';
+  margin-top: -1em;
 }
 .cd-side-nav {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
@@ -386,6 +459,9 @@ Sidebar
   background-color: #fff;
   visibility: hidden;
   opacity: 0;
+  border-right: 1px;
+  border-color: #e2e2e2;
+  border-style: solid;
   max-height: 100vh;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -422,18 +498,20 @@ Sidebar
   color: #000;
   font-size: 1rem;
   letter-spacing: .1em;
+  margin-top: 1em;
 }
 .cd-side-nav a {
   position: relative;
   color: #000;
-  font-size: 1.4rem;
+  font-size: .6em!important;
   font-family: 'Source Code Pro';
+
 }
 .cd-side-nav ul.cd-top-nav > li:last-of-type > a {
   border-bottom: none;
 }
 .cd-side-nav > ul > li > a {
-  padding-left: 0em;
+  padding-left: 2em;
   border-bottom: 1px solid #373d44;
 }
 .cd-side-nav > ul > li > a::before {
@@ -450,31 +528,12 @@ Sidebar
   transform: translateY(-50%);
   height: 16px;
   width: 16px;
-  font-family: 'Source+Code+Pro:500';
 }
 
-.cd-side-nav .count {
-  /* notification badge */
-  position: absolute;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: calc(5% + 16px + 0.4em);
-  padding: 0.2em 0.4em;
-  background-color: #ff7e66;
-  border-radius: .25em;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-align: center;
-}
 .cd-side-nav .action-btn a {
   display: block;
-  margin: 0 5%;
+  margin: 0 5% ;
+  padding-bottom: 10px;
   padding: 1em 0;
   background-color: #000;
   border: none;
@@ -482,6 +541,7 @@ Sidebar
   text-align: center;
   color: #ffffff;
   font-weight: bold;
+  padding-left: 0em;
 }
 .cd-side-nav .action-btn a::before {
   display: none;
@@ -493,12 +553,14 @@ Sidebar
     top: auto;
     width: 200px;
     min-height: 100vh;
+    height: 100%;
     padding-top: 55px;
     /* reset style */
     visibility: visible;
     opacity: 1;
     overflow: visible;
     max-height: none;
+
   }
   .cd-side-nav.nav-is-visible {
     box-shadow: none;
@@ -517,7 +579,7 @@ Sidebar
   .cd-side-nav a {
     font-size: 1.2rem;
     text-align: left;
-    padding-left: 2em;
+    padding-left: 2em!important;
   }
   .cd-side-nav > ul > li > a {
     padding: calc(2.2em + 24px) 0 2.4em;
@@ -534,7 +596,7 @@ Sidebar
   }
   .cd-side-nav .active > a {
     /* current page */
-    box-shadow: inset 3px 0 0 #1784c7;
+    box-shadow: inset 3px 0 0 #ee0d5b;
     font-weight: bold;
     text-align: left;
     padding-left: 2em;
@@ -563,11 +625,12 @@ Sidebar
   .cd-side-nav {
     width: 200px;
   }
+
   .cd-side-nav > ul {
     padding: 0.6em 0;
   }
   .cd-side-nav > ul > li:not(.action-btn):hover > a {
-    background-color: #33383e;
+    background-color: #e6e6e6;
   }
   .cd-side-nav > ul > li > a {
     padding: 1em 1em 1em 42px;
@@ -589,13 +652,14 @@ Sidebar
     padding: 1em 18px;
   }
   .cd-side-nav .action-btn {
-    text-align: left;
+    text-align: center;
   }
   .cd-side-nav .action-btn a {
     margin: 0 18px;
+    padding-right: 40px!important;
   }
   .no-touch .cd-side-nav .action-btn a:hover {
-    background-color: #1a93de;
+    background-color: #ee0d5b!important;
   }
   .cd-side-nav .count {
     /* reset style */
