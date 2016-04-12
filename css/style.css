@@ -3,7 +3,7 @@
 Primary style
 
 -------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,700,400);
 
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 
@@ -35,11 +35,110 @@ h1.logo{
   display: block;
 }
 
+div.label {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  color: black;
+  font-family: "Source Code Pro", sans-serif;
+  padding: 4px;
+  z-index: 1;
+  font-size: .75em;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+div.labelabout {
+  position: absolute;
+  top: 0;
+  background-color: #ee0d5b;
+  color: white;
+  font-family: "Source Code Pro", sans-serif;
+  padding: 4px;
+  z-index: 1;
+  font-size: .75em;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+p {
+  color: black;
+  position: relative;
+  margin-left: 3em;
+  padding-top: 5em;
+  padding-right: 4em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: .75em;
+  line-height: 1.5em;
+}
+
+.group {
+    float: left;
+    margin-left: .5em;
+    margin-right: 2em;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
+.group:hover .tint {
+  background:rgba(238,13,91,.75);
+                 text-align:center;
+                 opacity:.60;
+                 -webkit-transition: opacity .25s ease;
+                 -moz-transition: opacity .25s ease;}
+
+.tint {  opacity:1;
+               padding-bottom: -25px;}
+img.category {
+  width: 100%;
+}
+
+.columns {
+    margin-left: 1.75em;
+    margin-top: 1em;
+    max-width: 800px;
+}
+figure {
+  width: 200px;
+}
+
+figcaption {
+  color: black;
+  text-align: center;
+  font-size: .75em;
+    margin-top: .5em;
+}
+
+figcaption.subcaption {
+  color: black;
+  font-size: .6em;
+  margin-top: .5em;
+  text-align: center;
+  padding-bottom: 1em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
 @media screen and (max-width: 770px) {
   h1.logo{
     display: none;
   }
+  div.label {
+    font-size: .6em;
+    margin-left: 1.5em;
+    margin-top: 5em;
+  }
 
+  div.labelabout {
+    font-size: .6em;
+    margin-left: 1.5em;
+    margin-top: 5em;
+  }
+  p {
+    margin-left: 1.25em;
+    padding-top: 4em;
+
+  }
 }
 
 h1.logo-mobile{
@@ -66,6 +165,7 @@ a {
 
 a.logo {
   color: #000;
+  z-index: 3;
 }
 
 a.logo:hover {
@@ -133,12 +233,15 @@ Header
 .cd-main-header {
   position: absolute;
   display: block;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   height: 45px;
   width: 100%;
   background: #fff;
+  border-bottom: 1px;
+  border-color: #e2e2e2;
+  border-style: solid;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -177,9 +280,11 @@ Header
   display: block;
   width: 34px;
   height: 44px;
+
   margin-right: 5%;
   top: 0;
   right: 0;
+  z-index: 3;
   /* hide text */
   overflow: hidden;
   white-space: nowrap;
@@ -192,6 +297,7 @@ Header
   height: 3px;
   width: 24px;
   background: #000;
+  z-index: 3;
 }
 .cd-nav-trigger span {
   /* line in the center */
@@ -235,6 +341,7 @@ Header
 .cd-nav-trigger.nav-is-visible span {
   /* hide line in the center */
   background: rgba(255, 255, 255, 0);
+
 }
 .cd-nav-trigger.nav-is-visible span::before, .cd-nav-trigger.nav-is-visible span::after {
   /* keep visible other 2 lines */
@@ -349,10 +456,11 @@ Sidebar/Navigation
 -------------------------------- */
 .cd-side-nav{
   font-family: 'Source+Code+Pro:500';
+  margin-top: -1em;
 }
 .cd-side-nav {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
@@ -360,6 +468,9 @@ Sidebar/Navigation
   background-color: #fff;
   visibility: hidden;
   opacity: 0;
+  border-right: 1px;
+  border-color: #e2e2e2;
+  border-style: solid;
   max-height: 100vh;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -396,6 +507,7 @@ Sidebar/Navigation
   color: #000;
   font-size: 1rem;
   letter-spacing: .1em;
+  margin-top: 1em;
 }
 .cd-side-nav a {
   position: relative;
@@ -449,6 +561,7 @@ Sidebar/Navigation
     top: auto;
     width: 200px;
     min-height: 100vh;
+    height: 100%;
     padding-top: 55px;
     /* reset style */
     visibility: visible;
@@ -547,7 +660,7 @@ Sidebar/Navigation
     padding: 1em 18px;
   }
   .cd-side-nav .action-btn {
-    text-align: left;
+    text-align: center;
   }
   .cd-side-nav .action-btn a {
     margin: 0 18px;

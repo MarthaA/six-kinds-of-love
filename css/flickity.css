@@ -151,23 +151,31 @@ img {
 /*-----*/
 
 .hero-carousel {
-  margin-bottom: 80px;
-  background: #fff);
+  position: relative;
+  margin-bottom: 5px;
   background-size: contain;
+
 }
 
 .hero-carousel__cell {
   width: 100%;
-  color: white;
   background: #ee0d5b;
+  position: relative;
 }
 
 .hero-carousel__cell__content {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
+  padding-top: 20px;
 }
 
+.hero-carousel__cell__content_first {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 80px;
+}
 
 .hero-carousel__cell--2 {
   background: #ee0d5b;
@@ -195,22 +203,36 @@ img {
 
 /* ---- large device styles ---- */
 
-@media screen and ( min-width: 768px ) {
+@media screen and ( min-width: 760px ) {
 
   .hero-carousel__cell {
-    height: 800px;
+    height: 500px;
   }
 
   .hero-carousel__cell__content {
-    padding-top: 40px;
+    padding-top: 50px;
+  }
+  .hero-carousel__cell__content_first {
+    padding-top: 80px;
   }
 
 }
 
-@media screen and ( min-width: 960px ) {
+@media screen and ( min-width: 930px ) {
 
-  .hero-carousel__cell--1  .hero-carousel__cell__content {
+  .hero-carousel__cell {
+    height: 600px;
+  }
+    .hero-carousel__cell--1  .hero-carousel__cell__content {
     padding-right: 400px;
+  }
+
+}
+
+@media screen and ( min-width: 1020px ) {
+
+  .hero-carousel__cell {
+    height: 700px;
   }
 
 }
