@@ -633,7 +633,7 @@ Sidebar/Navigation
 input[type="button"] {
   display: block;
   position: relative;
-  padding-bottom: 10px;
+  margin-bottom: 30px;
   padding: .75em;
   padding-left: 2.75em;
   padding-right: 2.75em;
