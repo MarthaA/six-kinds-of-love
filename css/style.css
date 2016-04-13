@@ -210,12 +210,6 @@ a.logo {
   z-index: 3;
   font-family: "Oswald", sans-serif;
 }
-
-a.logo:hover {
-  color: #ee0d5b;
-  font-family: "Oswald";
-}
-
 img.main {
   padding-top: 2em;
   width: 100%;
