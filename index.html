@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+
+
 	<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +54,7 @@
 				</ul>
 			<ul>
 
-				<li class="action-btn"><a href="#0">Random</a></li>
+			<input type="button" value="Random" onClick="randImg()" />
 			</ul>
 		</nav>
 
@@ -65,9 +67,27 @@
 <div class="home_hero-carousel js-flickity" data-js-module="hero-carousel"  data-flickity-options='{ draggable: false}'>
 	<div class="hero-carousel__cell hero-carousel__cell--2">
 		<div class="hero-carousel__cell__content_first">
-			<img src="img/image1.jpg" alt="wolf">
+		  <img id="image" />
 		</div>
 	</div>
+	</div>
+
+
+<script>
+var images = [
+    "imghome/2.png",
+    "imghome/3.png",
+    "imghome/1.jpg"];
+
+function randImg() {
+    var size = images.length
+    var x = Math.floor(size * Math.random())
+    document.getElementById('image').src = images[x];
+}
+
+randImg();
+
+</script>
 
 
 	</main> <!-- .cd-main-content -->

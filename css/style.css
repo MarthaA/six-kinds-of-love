@@ -59,7 +59,7 @@ div.labelabout {
   z-index: 1;
   font-size: .75em;
   margin-left: 3em;
-  margin-top: 2em;
+  margin-top: 2.3em;
 }
 ul.questions {
   color: black;
@@ -120,7 +120,11 @@ img.category {
     margin-left: 1.75em;
     margin-top: 1em;
     max-width: 800px;
-    padding-bottom: 100px;
+    padding-bottom: 250px;
+}
+
+.icons {
+      padding-bottom: 150px;
 }
 figure {
   width: 200px;
@@ -143,6 +147,15 @@ figcaption.subcaption {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+
+#box {
+    background-color:#000000;
+    text-align: center;
+    padding-top: 12px;
+    width: 600px;
+    height: 350px;
+}
+
 @media screen and (max-width: 770px) {
   h1.logo{
     display: none;
@@ -226,15 +239,17 @@ img.main {
   float: left;
   width: 50%;
   margin-right: 100px;
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 1200px) {
 
   .form {
-    width: 100%
+    width: 100%;
   }
 
   .questions {
     width: 80%;
+      margin-bottom: 0px;
   }
 
 }
@@ -627,14 +642,34 @@ Sidebar/Navigation
   font-weight: bold;
   padding-left: 0em;
 }
+
+input[type="button"] {
+  display: block;
+  padding-bottom: 10px;
+  padding: .75em;
+  padding-left: 2.75em;
+  padding-right: 2.75em;
+  background-color: #000;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 2em;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  font-size: .6em;
+}
+
 .cd-side-nav .action-btn a::before {
   display: none;
 }
 @media only screen and (min-width: 768px) {
   .cd-side-nav {
-    position: relative;
+    position: fixed;
     float: left;
-    top: auto;
+    top: 10px;
     width: 200px;
     min-height: 100vh;
     height: 100%;
