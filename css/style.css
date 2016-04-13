@@ -13,7 +13,6 @@ Primary style
   box-sizing: border-box;
 }
 
-
 body {
   font-size: 1.6em;
   font-family: "Source Code Pro", sans-serif;
@@ -148,7 +147,6 @@ figcaption.subcaption {
   font-weight: 300;
 }
 
-
 @media screen and (max-width: 770px) {
   h1.logo{
     display: none;
@@ -200,7 +198,7 @@ h1{
 }
 
 a {
-  color: #ee0d5b;
+  color: #000;
   text-decoration: none;
   font-family: "Oswald";
 }
@@ -304,6 +302,7 @@ Header
   border-bottom: 1px;
   border-color: #e2e2e2;
   border-style: solid;
+  max-height: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -534,6 +533,7 @@ Sidebar/Navigation
   border-color: #e2e2e2;
   border-style: solid;
   max-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -576,6 +576,7 @@ Sidebar/Navigation
   color: #000;
   font-size: .6em!important;
   font-family: 'Source Code Pro';
+
 
 }
 
@@ -623,7 +624,6 @@ Sidebar/Navigation
   padding: 1em 0;
   background-color: #000;
   border: none;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   text-align: center;
   color: #ffffff;
   font-weight: bold;
@@ -632,6 +632,7 @@ Sidebar/Navigation
 
 input[type="button"] {
   display: block;
+  position: relative;
   padding-bottom: 10px;
   padding: .75em;
   padding-left: 2.75em;
@@ -656,6 +657,7 @@ input[type="button"]:hover {
 .cd-side-nav .action-btn a::before {
   display: none;
 }
+
 @media only screen and (min-width: 768px) {
   .cd-side-nav {
     position: fixed;
@@ -663,13 +665,12 @@ input[type="button"]:hover {
     top: 10px;
     width: 200px;
     min-height: 100vh;
-    height: 100%;
+    height: 100vh;
     padding-top: 55px;
     /* reset style */
     visibility: visible;
     opacity: 1;
     overflow: visible;
-    max-height: none;
 
   }
   .cd-side-nav.nav-is-visible {
@@ -909,5 +910,13 @@ input[type="button"]:hover {
     display: block;
     opacity: 1;
     visibility: visible;
+  }
+}
+
+
+@media only screen and (max-height: 700px) {
+  .cd-side-nav {
+    overflow:scroll;
+
   }
 }
