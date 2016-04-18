@@ -19,6 +19,7 @@ body {
   color: #fff;
   background-color: #fff;
   height: 100%;
+  overflow: visible;
 }
 body::after {
   clear: both;
@@ -215,15 +216,14 @@ img.main {
 
 .form {
   float: left;
-
   width: 50%
-  margin-left: 110px;
+
 }
 
 .questions {
   float: left;
   width: 50%;
-  margin-right: 100px;
+
   margin-bottom: 50px;
 }
 @media only screen and (max-width: 1200px) {
@@ -915,8 +915,10 @@ input[type="button"]:hover {
 
 
 @media only screen and (max-height: 700px) {
-  .cd-side-nav {
+  body {
     overflow:scroll;
-
   }
+  .cd-side-nav {
+
+    overflow: scroll;
 }

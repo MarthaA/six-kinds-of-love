@@ -58,14 +58,14 @@ img {
 
 .hero-carousel__cell--2 {
   background: #ee0d5b;
-  overflow: visible;
+
 }
 
 
 
 @media only screen and (max-height: 700px) {
   .hero-carousel__cell--2 {
-    overflow: scroll;
+    overflow:scroll;
   }
 
 
