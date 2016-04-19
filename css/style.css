@@ -33,8 +33,11 @@ h1.logo{
   text-transform: uppercase;
   line-height: 1.3em;
   font-size: 2em;
-  display: flex;
   text-align: left!important;
+  display:flex;
+  display:-webkit-flex;
+
+
 }
 
 div.label {
@@ -169,8 +172,6 @@ figcaption.subcaption {
     padding-top: 2em;
     font-family: "Open Sans", sans-serif;
     padding-right: 2em;
-
-
   }
   h2{
     margin-left: .70em;
@@ -723,14 +724,14 @@ input[type="button"]:hover {
     /* current page */
     box-shadow: inset 3px 0 0 #ee0d5b;
     font-weight: normal;
-    margin-top: -2em;
+    margin-top: 0em;
   }
 
   .cd-side-nav .notactivelogo > a {
     /* current page */
 
     font-weight: normal;
-    margin-top: -2em;
+    margin-top: 0em;
   }
   .cd-side-nav .action-btn a {
     margin: 1em 10% 0;
@@ -928,4 +929,11 @@ input[type="button"]:hover {
   .cd-side-nav {
 
     overflow: scroll;
+}
+}
+@media screen and(-webkit-min-device-pixel-ratio:0) {
+  a.logo{
+    color: red;
+  }
+
 }
