@@ -525,7 +525,7 @@ Sidebar/Navigation
   left: 0;
   top: 0;
   width: 100%;
-  padding: 45px 0 0;
+  padding: 0px 0 0;
   background-color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -533,7 +533,6 @@ Sidebar/Navigation
   border-color: #e2e2e2;
   border-style: solid;
   max-height: 100vh;
-  height: 100vh;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -648,6 +647,8 @@ input[type="button"] {
   letter-spacing: 1px;
   font-size: .6em;
   cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 0px;
 }
 
 input[type="button"]:hover {
@@ -671,6 +672,8 @@ input[type="button"]:hover {
     visibility: visible;
     opacity: 1;
     overflow: visible;
+    height: 100vh;
+    padding: 45px 0 0;
 
   }
   .cd-side-nav.nav-is-visible {
