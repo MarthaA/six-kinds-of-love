@@ -176,7 +176,7 @@ figcaption.subcaption {
     margin-left: .70em;
     font-size: 1.25em;
     line-height: 1.5em;
-        padding-right: 2em;
+    padding-right: 1.5em;
   }
   ul.questions {
     margin-left: 1.25em;
@@ -227,7 +227,6 @@ img.main {
 .questions {
   float: left;
   width: 50%;
-
   margin-bottom: 50px;
 }
 @media only screen and (max-width: 1200px) {
@@ -237,8 +236,8 @@ img.main {
   }
 
   .questions {
-    width: 80%;
-      margin-bottom: 0px;
+    width: 85%;
+    margin-bottom: 0px;
   }
 
 }
