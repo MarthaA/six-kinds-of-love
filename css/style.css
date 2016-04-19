@@ -168,16 +168,20 @@ figcaption.subcaption {
     margin-left: 1.25em;
     padding-top: 2em;
     font-family: "Open Sans", sans-serif;
+    padding-right: 2em;
+
 
   }
   h2{
     margin-left: .70em;
     font-size: 1.25em;
     line-height: 1.5em;
+        padding-right: 2em;
   }
   ul.questions {
     margin-left: 1.25em;
   }
+
 
 }
 
@@ -258,9 +262,6 @@ Main Page Content
   content: 'mobile';
 }
 
-.about-content {
-  width: 95%;
-}
 @media only screen and (min-width: 768px) {
   .cd-main-content .content-wrapper {
     margin-left: 200px;
