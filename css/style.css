@@ -154,43 +154,6 @@ figcaption.subcaption {
   font-weight: 300;
 }
 
-@media screen and (max-width: 770px) {
-  h1.logo{
-    display: none;
-    font-family: "Oswald", sans-serif;
-  }
-  div.label {
-        position: absolute;
-        font-size: .6em;
-    margin-left: 1.5em;
-    margin-top: 5em;
-  }
-
-  div.labelabout {
-        position: absolute;
-        font-size: .6em;
-    margin-left: 1.5em;
-    margin-top: 5em;
-  }
-  p {
-    margin-left: 1.25em;
-    padding-top: 2em;
-    font-family: "Open Sans", sans-serif;
-    padding-right: 2em;
-  }
-  h2{
-    margin-left: .70em;
-    font-size: 1.25em;
-    line-height: 1.5em;
-    padding-right: 1.5em;
-  }
-  ul.questions {
-    margin-left: 1.25em;
-  }
-  img.logo {
-    display: none;
-  }
-}
 
 h1.logo-mobile{
   font-family: 'Oswald', sans-serif;
@@ -552,11 +515,11 @@ Sidebar/Navigation
 }
 .cd-side-nav > ul {
   padding: 0.6em 0;
-  line-height: 1.75em;
+
 }
 .cd-side-nav > ul.first {
-  padding: 2em 0;
-  line-height: 1.75em;
+  padding: 0em 0;
+
 }
 .cd-side-nav > ul:last-of-type {
   padding-bottom: 0;
@@ -928,8 +891,49 @@ input[type="button"]:hover {
     overflow: scroll;
 }
 }
-@media screen and(-webkit-min-device-pixel-ratio:0) {
+
+@media screen and (max-width: 770px) {
   h1.logo{
-    display: flex;
+    display: none;
+    font-family: "Oswald", sans-serif;
+  }
+  div.label {
+        position: absolute;
+        font-size: .6em;
+    margin-left: 1.5em;
+    margin-top: 5em;
+  }
+
+  div.labelabout {
+        position: absolute;
+        font-size: .6em;
+    margin-left: 1.5em;
+    margin-top: 5em;
+  }
+  p {
+    margin-left: 1.25em;
+    padding-top: 2em;
+    font-family: "Open Sans", sans-serif;
+    padding-right: 2em;
+  }
+  h2{
+    margin-left: .70em;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    padding-right: 1.5em;
+  }
+  ul.questions {
+    margin-left: 1.25em;
+  }
+  img.logo {
+    display: none;
+  }
+  .cd-side-nav > ul {
+    padding: 0.6em 0;
+    line-height: 1.75em;
+  }
+  .cd-side-nav > ul.first {
+    padding: 2em 0;
+    line-height: 1.75em;
   }
 }
