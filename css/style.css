@@ -932,8 +932,9 @@ input[type="button"]:hover {
 }
 }
 @media screen and(-webkit-min-device-pixel-ratio:0) {
-  a.logo{
-    color: red;
+  h1.logo{
+    font-size: 1em;
+    display: flex;
   }
 
 }
