@@ -178,15 +178,23 @@ img {
 }
 
 .hero-carousel__cell--2 {
-  background: #ee0d5b;
+  background: #ee0d5b; /* color: pink */
 }
 
 .hero-carousel__cell--3 {
-  background: #088c9b;
+  background: #088c9b; /* color: blue */
 }
 
 .hero-carousel__cell--4 {
-  background: #54158a;
+  background: #54158a; /* color: purple */
+}
+
+.hero-carousel__cell--5 {
+  background: #a5b33a; /* color: green */
+}
+
+.hero-carousel__cell--6 {
+  background: #d22133; /* color: red */
 }
 
 
